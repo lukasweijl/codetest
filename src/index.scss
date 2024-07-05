@@ -130,3 +130,12 @@ h3 {
 .text-center {
   text-align: center;
 }
+
+.pageNotFound {
+  height: 40vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
