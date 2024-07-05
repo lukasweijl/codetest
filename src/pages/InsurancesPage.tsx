@@ -25,6 +25,7 @@ export default function DetailsPage() {
         buttonList={[buttonInfo]}
       />
       <div className="container">
+        <h2>Alla våra försäkringar</h2>
         <div className="three-col-container">
           {insuranceData?.map((insurance, index) => (
             <InsuranceCard
