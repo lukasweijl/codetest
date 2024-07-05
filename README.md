@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## 🚀 Getting started
 
+Visit the page here: [CodeTest](https://codetest-neon.vercel.app/)
+
 This project was built with:
 
 `Node version v20.11.1`
