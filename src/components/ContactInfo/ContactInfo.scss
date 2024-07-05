@@ -1,0 +1,31 @@
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  row-gap: 2rem;
+  line-height: 1.75rem;
+  font-size: 1rem;
+  color: var(--clr-grey);
+}
+
+.contact__flex {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact__flex dd {
+  color: var(--clr-grey);
+  font-size: large;
+}
+
+.contact__icon {
+  height: 3rem;
+  width: 3rem;
+  color: var(--clr-grey);
+}
+
+dd a {
+  color: var(--clr-grey);
+  text-decoration: none;
+}

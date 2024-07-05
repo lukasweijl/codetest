@@ -1,0 +1,11 @@
+.opening__hours {
+  display: flex;
+  gap: 2rem;
+}
+
+.open__hours__container {
+  margin: 2rem;
+  border: 1px solid var(--clr-light-grey);
+  border-radius: 1rem;
+  background-color: var(--clr-light);
+}

@@ -1,0 +1,60 @@
+.insurance__detail {
+  display: flex;
+  border: 1px solid var(--clr-light-grey);
+  border-radius: 1rem;
+}
+
+.insurance__detail .insurance__content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+}
+
+.insurance__flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.insurance__flex p {
+  font-size: large;
+}
+
+.insurance_dl {
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.insurance_dl__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+}
+
+.insurance_dl__title {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+.insurance_dl__text {
+  order: -99;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  margin: 0;
+}
+
+.insurance__btn {
+  width: fit-content;
+}

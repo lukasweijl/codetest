@@ -1,0 +1,29 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-blue);
+  border-radius: 3px;
+  padding: 18px 40px;
+  text-decoration: none;
+  gap: 1rem;
+  color: var(--clr-light);
+  border-style: none;
+  font-size: medium;
+  cursor: pointer;
+
+  &--primary {
+    background-color: var(--clr-blue);
+    &:hover {
+      background-color: darkblue;
+    }
+  }
+  &--secondary {
+    background-color: var(--clr-light);
+    color: var(--clr-blue);
+    border: 1px solid var(--clr-blue);
+    &:hover {
+      background-color: var(--clr-light-grey);
+    }
+  }
+}

@@ -1,0 +1,123 @@
+:root {
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+
+  --fw-reg: 300;
+  --fw-med: 500;
+  --fw-bold: 900;
+
+  --clr-background: #ffffff;
+  --clr-light: #faf9f7;
+  --clr-dark: #303030;
+  --clr-accent: #ede6e1;
+  --clr-hero: #e8e0d9;
+  --clr-blue: #0154f0;
+  --clr-grey: #111827;
+  --clr-light-grey: #cbcaca;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--clr-background);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-secondary);
+}
+
+.two-col-container {
+  margin: 0 auto;
+  display: grid;
+  max-width: 60rem;
+  column-gap: 2rem;
+  row-gap: 5rem;
+  padding: 2.5rem 1.5rem;
+  position: relative;
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (max-width: 768px) {
+    row-gap: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.three-col-container {
+  margin: 0 auto;
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  padding: 2.5rem 0;
+  position: relative;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (max-width: 550px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 60rem;
+  gap: 1rem;
+  padding: 1.5rem 1.5rem;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  margin: auto;
+  width: 100vw;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-med);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-med);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-med);
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-center {
+  text-align: center;
+}

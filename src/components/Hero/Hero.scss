@@ -1,0 +1,34 @@
+section {
+  background: var(--clr-hero);
+}
+
+p {
+  font-size: var(--fs-h3);
+}
+
+.btn__group {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.hero__image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 700px) {
+  .hero__image {
+    height: 16rem;
+  }
+}
+
+.lineheight {
+  line-height: 2rem;
+}
+.lineheight-large {
+  line-height: 4rem;
+}

@@ -1,0 +1,32 @@
+.btn__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem;
+  background-color: #f6f3f0;
+  position: relative;
+  border: 1px solid grey;
+  border-radius: 0.75rem;
+  text-decoration: none;
+}
+
+.btn__link {
+  flex: auto;
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+
+.btn__wrapper:hover {
+  background-color: var(--clr-background);
+  text-decoration: underline;
+  border: 1ps solid #b0b0b0;
+}
+
+.icon {
+  height: 2rem;
+  margin-right: 1rem;
+}
+.arrow {
+  height: 2rem;
+}

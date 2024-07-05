@@ -1,0 +1,23 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-blue);
+  border-radius: 3px;
+  padding: 15px 15px 15px 15px;
+  text-decoration: none;
+  gap: 1rem;
+  color: var(--clr-light);
+  height: 1.5rem;
+}
+
+.btn-icon {
+  height: 1.5rem;
+}
+.fit-content {
+  width: fit-content;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
