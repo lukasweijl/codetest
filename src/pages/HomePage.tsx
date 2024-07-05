@@ -12,10 +12,7 @@ import statisticsData from "../data/statsData";
  * Including hero section, contact buttons, statistics, and popular insurances.
  */
 export default function HomePage() {
-  const buttons = [
-    { name: "Ansök om ersättning", href: "/kontakta-oss" },
-    { name: "Kontakta oss", href: "/kontakta-oss" },
-  ];
+  const buttons = [{ name: "Kolla in försäkringar", href: "/forsakringar" }];
 
   return (
     <>

@@ -45,5 +45,9 @@ const router = createBrowserRouter([
  * @returns {JSX.Element} The rendered application.
  */
 export default function App(): JSX.Element {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 }
