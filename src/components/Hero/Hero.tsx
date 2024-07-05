@@ -40,7 +40,7 @@ const Hero = ({ buttonList, pageName, pageDescription, image }: Props) => {
             className="hero__image"
             src={image}
             fetchpriority="high"
-            alt="Beach img"
+            alt={pageName}
           />
         </div>
       </div>

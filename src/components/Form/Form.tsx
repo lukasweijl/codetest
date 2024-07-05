@@ -18,6 +18,8 @@ const Form = () => {
     message: "",
   });
 
+  const [isSubmitted, setIsSubmitted] = React.useState(false);
+
   const handleInputChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -26,6 +28,7 @@ const Form = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setIsSubmitted(true);
     console.log(formData);
   };
 
@@ -39,6 +42,7 @@ const Form = () => {
                 required
                 htmlFor="first-name"
                 label="Förnamn"
+                regex="[a-zA-Z]+"
                 type="text"
                 name="firstName"
                 autoComplete="given-name"
@@ -50,6 +54,7 @@ const Form = () => {
               <Input
                 required
                 htmlFor="last-name"
+                regex="[a-zA-Z]+"
                 label="Efternamn"
                 type="text"
                 name="lastName"
@@ -66,6 +71,7 @@ const Form = () => {
             label="Email"
             type="email"
             name="email"
+            regex="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             autoComplete="email"
             value={formData.email}
             onChange={handleInputChange}
@@ -76,6 +82,7 @@ const Form = () => {
             htmlFor="phone-number"
             label="Telefonnummer"
             type="tel"
+            regex="[0-9]{8,12}"
             name="phoneNumber"
             autoComplete="tel-national"
             value={formData.phoneNumber}
@@ -97,6 +104,11 @@ const Form = () => {
           </div>
         </div>
         <Button btnText="Skicka" onClick={() => handleSubmit} primary />
+        {isSubmitted && (
+          <p className="text-center">
+            Ditt meddelande har skickats! Det är presenterat i konsolen!
+          </p>
+        )}
       </form>
     </>
   );

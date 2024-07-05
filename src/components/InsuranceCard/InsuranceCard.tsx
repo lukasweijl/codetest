@@ -22,7 +22,12 @@ const InsuranceCard = ({ title, text, link, image }: InsuranceCardProps) => {
   return (
     <Link className="insurance__card" to={`/forsakringar${link}`}>
       <div className="insurance__content">
-        <img src={image} className="insurance__img" loading="lazy" alt="" />
+        <img
+          src={image}
+          className="insurance__img"
+          loading="lazy"
+          alt={title}
+        />
         <div className="text__container">
           <h3 className="title">{title}</h3>
           <p className="text">{text}</p>

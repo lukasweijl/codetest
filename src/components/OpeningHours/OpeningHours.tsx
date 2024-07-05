@@ -52,11 +52,11 @@ export const OpeningHours = () => {
       // Utilize this package to ensure the time is correct, and always as Riga's time
       const currentRigaTime = toZonedTime(data.datetime, data.timezone);
 
-      if (isOfficeOpen(currentRigaTime)) {
-        setModalMessage("Kontoret är öppet! Kom gärna förbi.🎉");
-      } else {
-        setModalMessage("Kontoret är stängt. Välkommen åter imorgon!");
-      }
+      setModalMessage(
+        isOfficeOpen(currentRigaTime)
+          ? "Kontoret är öppet! Kom gärna förbi.🎉"
+          : "Kontoret är stängt. Välkommen åter imorgon!"
+      );
     } catch (error) {
       console.error("Error fetching time:", error);
       setModalMessage(

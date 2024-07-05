@@ -16,12 +16,14 @@ and also works great with:
 `Node version v18.19.1`
 `NPM version v10.2.4`
 
+Or if running nvm just type: `nvm use`
+
 ## 💻 Cloning and Running the Application in local
 
 Start by cloning the repo to your local device!
 
 ```bash
-    git clone https://github.com/lukasweijl/if-codetest.git
+    git clone https://github.com/lukasweijl/codetest.git
 ```
 
 Install all the npm packages. Go into the project folder and type the following command to install all npm packages

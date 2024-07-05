@@ -3,6 +3,7 @@ import InsuranceCard from "../components/InsuranceCard/InsuranceCard";
 import { InsurancePresentation } from "../components/InsurancePresentation/InsurancePresentation";
 import insuranceData from "../data/insuranceData";
 import { useParams } from "react-router-dom";
+import PageNotFound from "./404Page";
 
 /**
  * * Insurance Page - displays the main content of the insurance page.
@@ -16,7 +17,7 @@ const InsurancePage = () => {
   );
 
   if (!insurance) {
-    return <div>Insurance not found</div>;
+    return <PageNotFound />;
   }
 
   return (

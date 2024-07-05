@@ -23,6 +23,7 @@ type Props = {
   value: string;
   type: string;
   required?: boolean;
+  regex?: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
@@ -33,6 +34,8 @@ export const Input = ({
   name,
   autoComplete,
   value,
+  regex,
+  required,
   onChange,
 }: Props) => {
   return (
@@ -40,7 +43,8 @@ export const Input = ({
       <label htmlFor={htmlFor}>{label}</label>
       <div className="input-container">
         <input
-          required
+          required={required}
+          pattern={regex}
           id={htmlFor}
           type={type}
           name={name}

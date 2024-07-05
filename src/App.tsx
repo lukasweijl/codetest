@@ -5,7 +5,6 @@ import InsurancePage from "./pages/InsurancePage";
 import ContactPage from "./pages/ContactPage";
 import PageNotFound from "./pages/404Page";
 import AppLayout from "./layouts/AppLayout";
-import "./App.scss";
 
 /**
  * Router configuration for the application.
@@ -45,9 +44,5 @@ const router = createBrowserRouter([
  * @returns {JSX.Element} The rendered application.
  */
 export default function App(): JSX.Element {
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
