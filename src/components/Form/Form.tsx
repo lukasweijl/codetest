@@ -71,7 +71,6 @@ const Form = () => {
             label="Email"
             type="email"
             name="email"
-            regex="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
             autoComplete="email"
             value={formData.email}
             onChange={handleInputChange}
