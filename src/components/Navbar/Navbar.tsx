@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assets/if-logo.svg";
+import logo from "../../assets/logo.svg";
 import "./Navbar.scss";
 import { useState } from "react";
 import { websitePages } from "../../data/websitePages";
