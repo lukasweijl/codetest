@@ -1,5 +1,5 @@
 import Hero from "../components/Hero/Hero";
-import image from "../assets/img/beach.webp";
+import insuranceImage from "../assets/img/insurance.webp";
 import InsuranceCard from "../components/InsuranceCard/InsuranceCard";
 import insuranceData from "../data/insuranceData";
 
@@ -21,7 +21,7 @@ export default function DetailsPage() {
         pageDescription=" Med rätt försäkring blir livet lite enklare och tryggare. Vi finns
             vid din sida när du behöver hjälp och goda råd. Visste du förresten
             att vi är Sveriges nyaste försäkringsbolag?"
-        image={image}
+        image={insuranceImage}
         buttonList={[buttonInfo]}
       />
       <div className="container">

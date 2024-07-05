@@ -2,7 +2,7 @@ import Hero from "../components/Hero/Hero";
 import Form from "../components/Form/Form";
 import { ContactInfo } from "../components/ContactInfo/ContactInfo";
 import { OpeningHours } from "../components/OpeningHours/OpeningHours";
-import beach from "../assets/img/beach.webp";
+import contact from "../assets/img/contact.webp";
 
 /**
  * * Contact Page - displays the main content of the contact page.
@@ -13,7 +13,7 @@ export default function ContactPage() {
   return (
     <>
       <Hero
-        image={beach}
+        image={contact}
         pageName="Välkommen till vår kundservice!"
         pageDescription="Här nedan hittar du information om hur du kan få tag i oss samt våra öppettider"
       />
