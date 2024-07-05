@@ -38,7 +38,7 @@ export default function HomePage() {
       </div>
 
       <Stats
-        title="Betrodd av 1 000 000 Skandinavier ✅"
+        title="1 000 000 svenskar har sin försäkring hos oss✅"
         subtitle="Gör som många andra och välj oss!"
         statsList={statisticsData}
       />
